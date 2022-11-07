@@ -1,2 +1,4 @@
+alias source_bashrc='source $HOME/.bashrc'
 alias open_bashrc='gedit ~/.bashrc'
 alias open_nrg_bash='gedit $HOME/.nrg_bash/nrg.sh'
+alias clear_aliases='rm $HOME/.nrg_bash/aliases/*'
