@@ -1,0 +1,2 @@
+alias open_bashrc='gedit ~/.bashrc'
+alias open_nrg_bash='gedit $HOME/.nrg_bash/nrg.sh'

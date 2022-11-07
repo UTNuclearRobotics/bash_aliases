@@ -1,0 +1,4 @@
+alias ping_spot_iot='ping 00301a4f4316.dynamic.utexas.edu'
+alias ping_core_iot='ping a0d76840661c.dynamic.utexas.edu'
+
+alias sync_spot='rsync -r /home/$USER/lanl_ws/src/ spot@augre_spot_core:/home/spot/base_ws/src'

@@ -1,0 +1,2 @@
+alias phoenix_start='xhost +si:localuser:root & catkin-docker run'
+alias phoenix_src='export ARL_UNITY_ROS_VULKAN=1 & source docker-build/install/setup.bash'
