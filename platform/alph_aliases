@@ -1,0 +1,7 @@
+alias ping_alph_iot='ping 00301a4f4316.dynamic.utexas.edu'
+alias ping_alph_core_iot='ping a0d76840661c.dynamic.utexas.edu'
+
+alias ssh_alph_augre='ssh user@alph_augre'             # Add this host with "sudo echo 'alph_augre       192.168.11.150' >> /etc/hosts"
+alias ssh_alph_core_augre='ssh user@alph_core_augre'   # Add this host with "sudo echo 'alph_core_augre  192.168.11.151' >> /etc/hosts"
+
+alias sync_this_to_alph_core='rsync -r /home/$USER/lanl_ws/src/ spot@alph_core_augre:/home/spot/base_ws/src'
