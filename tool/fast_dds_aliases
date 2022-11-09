@@ -2,7 +2,7 @@
 ### use this to run ROS2 over the campus networks
 
 # Install the systemd service for the discovery server on your machine
-alias install_fastdds_discovery_server='$HOME/.nrg_bash/install_fastdds_service.sh'
+alias install_fastdds_discovery_server='$HOME/.nrg_bash/fastdds/install_fastdds_service.sh'
 
 # Enabling/disabling startup launch for FastDDS discovery server
 alias enable_discovery_server_on_startup='sudo systemctl enable fastdds_discovery_server.service'

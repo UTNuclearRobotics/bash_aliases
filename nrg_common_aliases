@@ -3,7 +3,7 @@
 # Editing and sourcing bash
 alias source_bashrc='source $HOME/.bashrc'
 alias open_bashrc='gedit ~/.bashrc'
-alias open_bash_config='gedit $HOME/.nrg_bash/config.sh'
+alias open_nrg_config='gedit $HOME/.nrg_bash/config.sh'
 
 # Clear the alias files in the nrg_bash directory
 alias clear_aliases='rm -rf $HOME/.nrg_bash/aliases/*'
