@@ -1,3 +1,5 @@
+### Aliases & commands for the Boston Dynamics Spot robot "Alph"
+
 alias ping_alph_iot='ping 00301a4f4316.dynamic.utexas.edu'
 alias ping_alph_core_iot='ping a0d76840661c.dynamic.utexas.edu'
 

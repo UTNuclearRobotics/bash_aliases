@@ -1,4 +1,23 @@
+### Aliases & commands for all NRG members
+
+# Editing and sourcing bash
 alias source_bashrc='source $HOME/.bashrc'
 alias open_bashrc='gedit ~/.bashrc'
-alias open_nrg_bash='gedit $HOME/.nrg_bash/nrg.sh'
+alias open_bash_config='gedit $HOME/.nrg_bash/config.sh'
+
+# Clear the alias files in the nrg_bash directory
 alias clear_aliases='rm -rf $HOME/.nrg_bash/aliases/*'
+
+# Ping a machine on the campus networks using its name in the DDNS server
+# Usage: ping_name device_name
+function ping_name()
+{
+  ping $1.dynamic.utexas.edu
+}
+
+# SSH into a machine on the campus networks using its name in the DDNS server
+# Usage: ssh_name user device_name
+function ssh_name()
+{
+  ssh $1@$2.dynamic.utexas.edu
+}

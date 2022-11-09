@@ -1,0 +1,31 @@
+### Aliases & commands for the ROS2 build program colcon
+
+# Run this from the root of a workspace to source it.
+alias source_this='source ./install/setup.bash'
+  
+# colcon build, with some useful options set:
+# symlink-install: This symbolically links the files in your install space with those in
+#                  your src space, so changes to one are reflected in the other.
+# packages-skip-build-finished: Skip packages that are already successfully built.
+# --parallel-workers N: Maximum number of packages to build at a time (default 12). Reduce N
+#                       to reduce your system load while building.
+function colcon_build()
+{
+  # Optional argument for number of packages allowed to build in parallel (default 12)
+  if [ $# -gt 0 ]; then
+    max_parallel=$1
+  else
+    max_parallel=12
+  fi
+  
+  colcon build --symlink-install --packages-skip-build-finished --parallel-workers $max_parallel
+}
+
+# Build a specific package
+function colcon_build_package()
+{
+  colcon build --packages-select $1
+}
+  
+# Delete the build and install spaces of the workspace. Run this in the root of the workspace.
+alias colcon_clean='rm -r build install log'
