@@ -3,10 +3,22 @@
 # Editing and sourcing bash
 alias source_bashrc='source $HOME/.bashrc'
 alias open_bashrc='gedit ~/.bashrc'
-alias open_nrg_config='gedit $HOME/.nrg_bash/config.sh'
+alias open_nrg_config='gedit $HOME/nrg_config.sh'
+
+# Source a ROS installation
+# Usage: source_ros distro_name
+function source_ros()
+{
+  source /opt/ros/$1/setup.bash
+}
 
 # Clear the alias files in the nrg_bash directory
-alias clear_aliases='rm -rf $HOME/.nrg_bash/aliases/*'
+alias clear_aliases='rm -rf $HOME/.nrg_aliases/*'
+
+
+
+
+
 
 # Ping a machine on the campus networks using its name in the DDNS server
 # Usage: ping_name device_name
