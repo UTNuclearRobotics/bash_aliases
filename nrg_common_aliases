@@ -12,11 +12,7 @@ function source_ros()
 }
 
 # Clear the alias files in the nrg_env directory
-function clear_aliases()
-{
-  rm -rf $HOME/.nrg_env/nrg_aliases/*
-  rm $HOME/.nrg_env/nrg_common_aliases
-}
+alias clear_aliases='rm -rf $HOME/.nrg_env/nrg_aliases/*'
 
 # Ping a machine on the campus networks using its name in the DDNS server
 # Usage: ping_name device_name
